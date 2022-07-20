@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>연습</title>
+</head>
+<body>
+<div style="width:80vw"><canvas id="myChart"></canvas></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+var num = Math.floor(Math.random() * 100)
+str = "0~99 사이의 값을 입력하세요."
+str2 = "입력한 값이 작습니다. 큰 값을 입력하세요."
+str3 = "입력한 값이 큽니다. 작은 값을 입력하세요."
+a = []
+b = []
+c = []
+k = 0
+a[k] = prompt(str)
+while (true){
+  b[k] = k + 1
+  if (num == a[k]){
+    document.write("당신은 " + (k+1) + "번째의 시도에 맞히셨습니다. <br>")
+    c[k] = num
+    break
+    }
+  else if (num > a[k]){
+    k = k + 1
+    a[k] = prompt(str2)
+  }
+  else {
+    k = k + 1
+    a[k] = prompt(str3)
+  }
+  
+}
+
+for (i = 0; i < k; i++){
+  c[i] = num
+}
+
+document.write("당신이 입력한 숫자는 " + a.toString())
+datainfo = {
+  labels : b,
+  datasets : [{
+    label : 'Number guess',
+    backgroundColor : ['gray', 'red'],
+    borderColor : 'blue',
+    data : a,
+    tension : 0.5
+   },
+   {
+   label : 'Answer',
+    backgroundColor : ['gray', 'red'],
+    borderColor : 'red',
+    data : c,
+    tension : 0.5
+   }]
+}
+const config = {
+  type : 'line',
+  data : datainfo
+}
+mychart = new Chart(document.getElementById("myChart"), config)
+</script>
+</body>
+</html>
