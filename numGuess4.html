@@ -1,15 +1,15 @@
 <html>
 <head>
-<title>¿¬½À</title>
+<title>ì—°ìŠµ</title>
 </head>
 <body>
 <div style="width:80vw"><canvas id="myChart"></canvas></div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 var num = Math.floor(Math.random() * 100)
-str = "0~99 »çÀÌÀÇ °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä."
-str2 = "ÀÔ·ÂÇÑ °ªÀÌ ÀÛ½À´Ï´Ù. Å« °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä."
-str3 = "ÀÔ·ÂÇÑ °ªÀÌ Å®´Ï´Ù. ÀÛÀº °ªÀ» ÀÔ·ÂÇÏ¼¼¿ä."
+str = "Enter a value between 0 and 99."
+str2 = "Enter a large value."
+str3 = "Enter a small value."
 a = []
 b = []
 c = []
@@ -18,7 +18,7 @@ a[k] = prompt(str)
 while (true){
   b[k] = k + 1
   if (num == a[k]){
-    document.write("´ç½ÅÀº " + (k+1) + "¹øÂ°ÀÇ ½Ãµµ¿¡ ¸ÂÈ÷¼Ì½À´Ï´Ù. <br>")
+    document.write("You hit the " + (k+1) + "try. <br>")
     c[k] = num
     break
     }
@@ -37,7 +37,7 @@ for (i = 0; i < k; i++){
   c[i] = num
 }
 
-document.write("´ç½ÅÀÌ ÀÔ·ÂÇÑ ¼ıÀÚ´Â " + a.toString())
+document.write("The number you entered is " + a.toString())
 datainfo = {
   labels : b,
   datasets : [{
