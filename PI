@@ -32,7 +32,7 @@ for (i = 0; i <= 100000000; i ++){
   if (i == 80000000) padd(i, k)
   if (i == 90000000) padd(i, k)
   if (i == 100000000) padd(i, k)
-}
+} 
 
 for (j = 0; j < 15; j++){
   c[j] = Math.PI
