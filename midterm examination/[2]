@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>mydata</title>
 <script>
 var mydata = [1,2,3,4,5];
