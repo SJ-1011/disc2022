@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>10의 세제곱근</title>
+<script>
+var err = 0.00000001;
+var a = 2;
+var b = 3;
+var c = 0;
+var num = 0;
+while (Math.abs(c*c*c-10)>err){
+  if (b*b*b > 10){
+    b = b-((b-a)/2);
+    c = b;
+    num += 1;
+  }
+  else if (b*b*b < 10){
+    b = b+((b-a)/2);
+    c = b;
+    num += 1;
+  }
+  if (a*a*a < 10){
+    a = a+((b-a)/2);
+    c = a;
+    num += 1;
+  }
+  else if (a*a*a > 10){
+    a = a-((b-a)/2);
+    c = a;
+    num += 1;
+  }
+  if (a*a*a==10){
+    c = a;
+    num += 1;
+    break;
+  }
+  if (b*b*b==10){
+    c = b;
+    num += 1;
+    break;
+  }
+
+}
+document.write("<h1>계산한 10의 세제곱근 값은 " + c + "이고, 계산 횟수는 " + num + "입니다.</h1>");
+</script>
+</head>
+<body>
+</body>
+</html>
