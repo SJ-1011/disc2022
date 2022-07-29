@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>3개 버튼</title>
+<script>
+Jinsu = {
+  name: 'Jinsu',
+  age: 21
+}
+Chulsu = {
+  name: 'Chulsu',
+  age: 20
+}
+function answer1(){
+  var avg = (Jinsu.age + Chulsu.age) / 2;
+  document.querySelectorAll("button")[0].innerHTML = avg;
+  Jinsu.age += 1;
+  Chulsu.age += 1;
+}
+function answer2(){
+  var avg = (Jinsu.age + Chulsu.age) / 2;
+  document.querySelectorAll("button")[1].innerHTML = avg;
+  Jinsu.age += 1;
+  Chulsu.age += 1;
+}
+function answer3(){
+  var avg = (Jinsu.age + Chulsu.age) / 2;
+  document.querySelectorAll("button")[2].innerHTML = avg;
+  Jinsu.age += 1;
+  Chulsu.age += 1;
+}
+
+</script>
+</head>
+<body>
+<button onclick = 'answer1()' style = 'width: 200px; height: 100px; font-size: 50px;'>sum</button>
+<button onclick = 'answer2()' style = 'width: 200px; height: 100px; font-size: 50px;'>sum</button>
+<button onclick = 'answer3()' style = 'width: 200px; height: 100px; font-size: 50px;'>sum</button>
+</body>
+</html>
