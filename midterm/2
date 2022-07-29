@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>mydata</title>
+<script>
+var mydata = [1,2,3,4,5];
+for (i = 0; i < Math.floor(Math.random()*100); i ++){
+  mydata.push(Math.floor(Math.random()*100));
+  }
+var sum = 0;
+var avg = 0;
+for (i = 0; i < mydata.length; i++){
+  sum += mydata[i];
+}
+avg = sum / mydata.length;
+mydata.push(mydata.length);
+mydata.push(sum);
+mydata.push(avg);
+
+alert("배열의 개수 " + mydata.length + " 배열의 총합 " + sum + " 배열의 평균 " + avg);
+
+</script>
+</head>
+<body>
+</body>
+</html>
