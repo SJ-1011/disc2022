@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+.cls {
+  background: orange;
+}
+</style>
+<title>입력</title>
+<ul id = 'ul'>
+</ul>
+<button id = 'btn'>목록 추가</button>
+<script>
+var btn = document.getElementById('btn');
+var list = document.getElementById('ul');
+btn.addEventListener('click', function(){
+  var txt = prompt('새로운 내용을 입력하세요.');
+  list.innerHTML += '<li>' + txt + '</li>';
+})
+var li = list.getElementsByTagName('li');
+list.addEventListener('click', function(){
+  for(i = 0; i < event.target.parentNode.children.length; i++){
+	  event.target.parentNode.children[i].removeAttribute('class');
+		}
+	event.target.setAttribute('class', 'cls');
+});
+</script>
+</head>
+<body>
+</body>
+</html>
