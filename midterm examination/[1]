@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>10의 세제곱근</title>
 <script>
 var err = 0.00000001;
