@@ -7,22 +7,22 @@
 </head>
 <body>
   <div class = 'grid'> <!-- 배경이 될 div -->
-    <h1>기초 수학 공부하기</h1>
-    <p>원하는 카테고리를 선택하세요.</p>
+    <a href="https://SJ-1011.github.io/disc2022"><img id = "title" src="title.jpg"></img></a>
+    <h1><br/>원하는 카테고리를 선택하세요.<br/></h1>
     <!-- 아이콘 -->
-    <table>
+    <table id = "tb">
       <tr>
         <td>
-          <img id="icon1" src="images/icon1.jpg"/>
+          <img id="icon1" src="icon1.jpg"/>
         </td>
         <td>
-          <img id="icon2" src="images/icon2.jpg"/>
+          <img id="icon2" src="icon2.jpg"/>
         </td>
         <td>
-          <img id="icon3" src="images/icon3.jpg"/>
+          <img id="icon3" src="icon3.jpg"/>
         </td>
         <td>
-          <img id="icon4" src="images/icon4.jpg"/>
+          <img id="icon4" src="icon4.jpg"/>
         </td>
       </tr>
       <tr>
@@ -31,20 +31,32 @@
         <td>삼각법</td>
         <td>미적분</td>
       </tr>
-    </table>
   </div>
   <script>
     var img = document.querySelectorAll('img');
-    img[0].addEventListener('click', function(){
-      alert('아이콘1 클릭');
-    })
+    var td = document.querySelectorAll('td');
+    var tb = document.getElementById("tb");
     img[1].addEventListener('click', function(){
-      alert('아이콘2 클릭');
+      for (i=0; i<8; i++){
+        td[i].removeAttribute('class');
+        td[i].setAttribute('class', 'line');
+      }
+      td[0].innerHTML = "<button class='btn'>대수의<br/>성질</button>";
+      td[1].innerHTML = "<button class='btn'>지수</button>";
+      td[2].innerHTML = "<button class='btn'>근의 공식</button>";
+      td[3].innerHTML = "<button class='btn'>허수</button>";
+      td[4].innerHTML = "<button class='btn'>루트</button>";
+      td[5].innerHTML = "<button class='btn'>로그</button>";
+      td[6].innerHTML = "<button class='btn'>인수분해</button>";
+      td[7].innerHTML = "<button class='btn'>절대값</button>";
     })
     img[2].addEventListener('click', function(){
-      alert('아이콘3 클릭');
+      alert('아이콘2 클릭');
     })
     img[3].addEventListener('click', function(){
+      alert('아이콘3 클릭');
+    })
+    img[4].addEventListener('click', function(){
       alert('아이콘4 클릭');
     })
   </script>
