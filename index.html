@@ -1,12 +1,52 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=2">
-  </head>
-  <body>
-<h1>The foundation of MATH</h1>
-<a href="PI.html">대수의 성질</a><br>
-<a href="numGuess4.html">기하의 성질</a><br>
-<a href="ex/myProject.html">미적분의 계산법</a><br>
-    </body>
-  </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <title>The foundation of MATH</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class = 'grid'> <!-- 배경이 될 div -->
+    <h1>기초 수학 공부하기</h1>
+    <p>원하는 카테고리를 선택하세요.</p>
+    <!-- 아이콘 -->
+    <table>
+      <tr>
+        <td>
+          <img id="icon1" src="images/icon1.jpg"/>
+        </td>
+        <td>
+          <img id="icon2" src="images/icon2.jpg"/>
+        </td>
+        <td>
+          <img id="icon3" src="images/icon3.jpg"/>
+        </td>
+        <td>
+          <img id="icon4" src="images/icon4.jpg"/>
+        </td>
+      </tr>
+      <tr>
+        <td>대수</td>
+        <td>기하</td>
+        <td>삼각법</td>
+        <td>미적분</td>
+      </tr>
+    </table>
+  </div>
+  <script>
+    var img = document.querySelectorAll('img');
+    img[0].addEventListener('click', function(){
+      alert('아이콘1 클릭');
+    })
+    img[1].addEventListener('click', function(){
+      alert('아이콘2 클릭');
+    })
+    img[2].addEventListener('click', function(){
+      alert('아이콘3 클릭');
+    })
+    img[3].addEventListener('click', function(){
+      alert('아이콘4 클릭');
+    })
+  </script>
+</body>
+</html>
