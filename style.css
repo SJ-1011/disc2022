@@ -1,0 +1,23 @@
+.grid{
+	width: 1000px;
+	height: 1000px;
+	margin: 50px auto;
+	background-color: #fff;
+	padding: 10px 50px 30px 50px;
+	border: 2px solid #ccc;
+	border-radius: 10px;
+}
+.grid h1{
+	font-size: 2.4em;
+	text-align: center;
+}
+.grid p{
+	text-align: center;
+}
+td {
+  text-align: center;
+}
+table {
+   margin-left:auto;
+   margin-right:auto;
+}
