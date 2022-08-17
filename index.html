@@ -13,16 +13,16 @@
     <table id = "tb">
       <tr>
         <td>
-          <img id="icon1" src="images/icon1.jpg"/>
+          <img class = "icon" id="icon1" src="images/icon1.jpg"/>
         </td>
         <td>
-          <img id="icon2" src="images/icon2.jpg"/>
+          <img class = "icon" id="icon2" src="images/icon2.jpg"/>
         </td>
         <td>
-          <img id="icon3" src="images/icon3.jpg"/>
+          <img class = "icon" id="icon3" src="images/icon3.jpg"/>
         </td>
         <td>
-          <img id="icon4" src="images/icon4.jpg"/>
+          <img class = "icon" id="icon4" src="images/icon4.jpg"/>
         </td>
       </tr>
       <tr>
@@ -32,33 +32,6 @@
         <td>미적분</td>
       </tr>
   </div>
-  <script>
-    var img = document.querySelectorAll('img');
-    var td = document.querySelectorAll('td');
-    var tb = document.getElementById("tb");
-    img[1].addEventListener('click', function(){
-      for (i=0; i<8; i++){
-        td[i].removeAttribute('class');
-        td[i].setAttribute('class', 'line');
-      }
-      td[0].innerHTML = "<button class='btn'>대수의<br/>성질</button>";
-      td[1].innerHTML = "<button class='btn'>지수</button>";
-      td[2].innerHTML = "<button class='btn'>근의 공식</button>";
-      td[3].innerHTML = "<button class='btn'>허수</button>";
-      td[4].innerHTML = "<button class='btn'>루트</button>";
-      td[5].innerHTML = "<button class='btn'>로그</button>";
-      td[6].innerHTML = "<button class='btn'>인수분해</button>";
-      td[7].innerHTML = "<button class='btn'>절대값</button>";
-    })
-    img[2].addEventListener('click', function(){
-      alert('아이콘2 클릭');
-    })
-    img[3].addEventListener('click', function(){
-      alert('아이콘3 클릭');
-    })
-    img[4].addEventListener('click', function(){
-      alert('아이콘4 클릭');
-    })
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>
