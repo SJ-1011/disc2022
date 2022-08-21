@@ -20,16 +20,48 @@ img[1].addEventListener('click', function(){
   td[4].innerHTML = "<button class='btn'>루트</button>";
   td[5].innerHTML = "<button class='btn'>로그</button>";
   td[6].innerHTML = "<button class='btn'>인수분해</button>";
-  td[7].innerHTML = "<button class='btn'>절대값</button>";
+  td[7].innerHTML = "";
   
   /**버튼 객체 생성**/
   var btn1 = document.querySelectorAll('.btn');
   
   /**버튼 클릭 시 이벤트 발생(카테고리에 대한 내용)**/
   btn1[0].addEventListener('click', function(){
-    alert("클릭 완료");
-    })
+    document.querySelector('#grid2').innerHTML = "<br/><h1><산술적 특성></h1><br/>";
+    document.querySelector('#grid2').innerHTML += "<img src='images/algebra1.PNG'/><br/><br/>";
+    document.querySelector('#grid2').innerHTML += "<h1><산술 연산 예시></h1><br/>";
+    document.querySelector('#grid2').innerHTML += "<img src='images/algebra2.PNG'/><br/><br/>";
+    document.querySelector('#grid2').innerHTML += "<img src='images/algebra3.PNG'/><br/><br/>";
   })
+  btn1[1].addEventListener('click', function(){
+    document.querySelector('#grid2').innerHTML = "<br/><h1><지수의 성질></h1><br/>";
+    document.querySelector('#grid2').innerHTML += "<img src='images/algebra4.PNG'/><br/><br/>";
+  })
+  btn1[2].addEventListener('click', function(){
+    document.querySelector('#grid2').innerHTML = "<br/><h1><근의 공식></h1><br/>";
+    document.querySelector('#grid2').innerHTML += "<img src='images/algebra5.PNG'/><br/><br/>";
+  })
+  btn1[3].addEventListener('click', function(){
+    document.querySelector('#grid2').innerHTML = "<br/><h1><허수의 성질></h1><br/>";
+    document.querySelector('#grid2').innerHTML += "<img src='images/algebra6.PNG'/><br/><br/>";
+  })
+  btn1[4].addEventListener('click', function(){
+    document.querySelector('#grid2').innerHTML = "<br/><h1><루트의 성질></h1><br/>";
+    document.querySelector('#grid2').innerHTML += "<img src='images/algebra7.PNG'/><br/><br/>";
+    document.querySelector('#grid2').innerHTML += "n이 홀수일 경우<br/>";
+    document.querySelector('#grid2').innerHTML += "<img src='images/algebra8.PNG'/><br/><br/>";
+    document.querySelector('#grid2').innerHTML += "n이 짝수일 경우<br/>";
+    document.querySelector('#grid2').innerHTML += "<img src='images/algebra9.PNG'/><br/><br/>";
+  })
+  btn1[5].addEventListener('click', function(){
+    document.querySelector('#grid2').innerHTML = "<br/><h1><로그의 성질></h1><br/>";
+    document.querySelector('#grid2').innerHTML += "<img src='images/algebra10.PNG'/><br/><br/>";
+  })
+  btn1[6].addEventListener('click', function(){
+    document.querySelector('#grid2').innerHTML = "<br/><h1><알아두면 좋은 예시들></h1><br/>";
+    document.querySelector('#grid2').innerHTML += "<img src='images/algebra11.PNG'/><br/><br/>";
+  })
+})
   
 img[2].addEventListener('click', function(){
   /**테이블 데이터에 class를 부여하여 줄맞춤**/
@@ -53,7 +85,8 @@ img[2].addEventListener('click', function(){
   
   /**버튼 클릭 시 이벤트 발생(카테고리에 대한 내용)**/
   btn2[0].addEventListener('click', function(){
-    alert("클릭2 완료");
+    document.querySelector('#grid2').innerHTML = "<br/><h1><알아두면 좋은 예시들></h1><br/>";
+    document.querySelector('#grid2').innerHTML += "<img src='images/algebra11.PNG'/><br/><br/>";
     })
 })
 
