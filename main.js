@@ -3,9 +3,11 @@ var img = document.querySelectorAll('img');
 var td = document.querySelectorAll('td');
 var tb = document.getElementById("tb");
 var grid = document.getElementById("grid3");
+var grid2 = document.getElementById("grid2");
 
 /**4개의 상위 카테고리 클릭 시 하위 카테고리가 나옴**/
 img[1].addEventListener('click', function(){
+  grid2.setAttribute('class', 'grid2');
   grid.removeAttribute('class');
   grid.innerHTML = ""
   /**테이블 데이터에 class를 부여하여 줄맞춤**/
@@ -66,6 +68,7 @@ img[1].addEventListener('click', function(){
 })
   
 img[2].addEventListener('click', function(){
+  grid2.setAttribute('class', 'grid2');
   grid.removeAttribute('class');
   grid.innerHTML = ""
   /**테이블 데이터에 class를 부여하여 줄맞춤**/
@@ -164,6 +167,7 @@ img[2].addEventListener('click', function(){
 })
 
 img[3].addEventListener('click', function(){
+  grid2.setAttribute('class', 'grid2');
   grid.removeAttribute('class');
   grid.innerHTML = ""
   /**테이블 데이터에 class를 부여하여 줄맞춤**/
